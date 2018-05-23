@@ -139,7 +139,7 @@ public class NettyMessagingService implements ManagedMessagingService {
     @Override
     public ManagedMessagingService build() {
       if (address == null) {
-        address = Address.empty();
+        address = Address.all();
       }
       return new NettyMessagingService(name.hashCode(), address);
     }
